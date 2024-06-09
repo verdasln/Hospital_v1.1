@@ -25,7 +25,7 @@ namespace Hospital1._0.Classes
         }";
 
 
-        private static FirestoreDb Database;
+        public static FirestoreDb Database;
 
         public static void SetEnvironmentVariable()
         {

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Cloud.Firestore;
+using Hospital1._0.Classes;
 
 namespace Hospital1._0.Forms
 {
@@ -27,12 +29,43 @@ namespace Hospital1._0.Forms
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            var db = FirestoreHelper.Database;
+            if (CheckIfUserAlreadyExist())
+            {
+                MessageBox.Show("User already exists!");
+                return;
+            }
+            var data = GetWriteData();
+            DocumentReference docRef = db.Collection("LoginData").Document(data.Username);
+            docRef.SetAsync(data);
+            MessageBox.Show("User registered");
         }
 
-        private void GetWriteData()
+        private LoginData GetWriteData()
         {
-            string username = 
+            
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text;
+
+            return new LoginData()
+            {
+                Username = username,
+                Password = password
+            };
+        }
+
+        private bool CheckIfUserAlreadyExist()
+        {
+            string username = txtUsername.Text.Trim();
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("LoginData").Document(username);
+            LoginData data = docRef.GetSnapshotAsync().Result.ConvertTo<LoginData>();
+
+            if (data != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
