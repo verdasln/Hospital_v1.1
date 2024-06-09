@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Hospital1._0.Classes;
 using Hospital1._0.Forms;
 
 namespace Hospital1._0
@@ -18,6 +19,7 @@ namespace Hospital1._0
         static void Main()
         {
             Application.EnableVisualStyles();
+            FirestoreHelper.SetEnvironmentVariable();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
         }

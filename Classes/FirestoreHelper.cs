@@ -25,15 +25,20 @@ namespace Hospital1._0.Classes
         }";
 
 
-        private static string filepath = "";
-        private static FirestoreDb database;
+        private static FirestoreDb Database;
 
         public static void SetEnvironmentVariable()
         {
-            filepath = Path.Combine(Path.GetTempPath(), Path.GetFileNameWithoutExtension(Path.GetRandomFileName())) +
-                       ".json";
+            var tempFilePath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.json");
 
-            File.WriteAllText(filepath, fireconfig);
+            File.WriteAllText(tempFilePath, fireconfig);
+            File.SetAttributes(tempFilePath, FileAttributes.Hidden);
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", tempFilePath);
+
+            Database = FirestoreDb.Create("hospital-74444");
+
+            // Optionally delete the file after the application exits
+            AppDomain.CurrentDomain.ProcessExit += (sender, e) => File.Delete(tempFilePath);
 
         }
     }

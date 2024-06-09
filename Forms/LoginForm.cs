@@ -51,5 +51,13 @@ namespace Hospital1._0.Forms
                 txtPassword.Text = "Password";
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Hide();
+            RegisterForm form = new RegisterForm();
+            form.ShowDialog();
+            Close();
+        }
     }
 }
