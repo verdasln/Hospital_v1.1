@@ -1,6 +1,6 @@
 ﻿namespace Hospital1._0
 {
-    partial class AddNewDiagnosis
+    partial class AddDiagnosisForm
     {
         /// <summary>
         /// Required designer variable.

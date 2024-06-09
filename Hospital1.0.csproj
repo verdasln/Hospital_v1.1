@@ -161,23 +161,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\FirestoreHelper.cs" />
-    <Compile Include="Forms\AddNewDiagnosis.cs">
+    <Compile Include="Forms\AddDiagnosisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddNewDiagnosis.Designer.cs">
-      <DependentUpon>AddNewDiagnosis.cs</DependentUpon>
+    <Compile Include="Forms\AddDiagnosisForm.Designer.cs">
+      <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CheckHospitalInfo.cs">
+    <Compile Include="Forms\CheckHospitalInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CheckHospitalInfo.Designer.cs">
-      <DependentUpon>CheckHospitalInfo.cs</DependentUpon>
+    <Compile Include="Forms\CheckHospitalInfoForm.Designer.cs">
+      <DependentUpon>CheckHospitalInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CheckPatientsHistory.cs">
+    <Compile Include="Forms\CheckPatientsHistoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CheckPatientsHistory.Designer.cs">
-      <DependentUpon>CheckPatientsHistory.cs</DependentUpon>
+    <Compile Include="Forms\CheckPatientsHistoryForm.Designer.cs">
+      <DependentUpon>CheckPatientsHistoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>

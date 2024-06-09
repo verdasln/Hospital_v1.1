@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hospital1._0
 {
-    public partial class CheckPatientsHistory : Form
+    public partial class CheckPatientsHistoryForm : Form
     {
-        public CheckPatientsHistory()
+        public CheckPatientsHistoryForm()
         {
             InitializeComponent();
         }

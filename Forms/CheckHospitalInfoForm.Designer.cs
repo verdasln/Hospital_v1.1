@@ -1,6 +1,6 @@
 ﻿namespace Hospital1._0
 {
-    partial class CheckPatientsHistory
+    partial class CheckHospitalInfoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "CheckPatientsHistory";
+            this.Text = "CheckHospitalInfo";
         }
 
         #endregion
