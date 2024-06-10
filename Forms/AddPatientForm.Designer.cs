@@ -1,4 +1,4 @@
-﻿namespace Hospital1._0
+﻿namespace Hospital1._0.Forms
 {
     partial class AddPatientForm
     {
@@ -69,7 +69,6 @@
             this.lblName.Location = new System.Drawing.Point(30, 30);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(40, 16);
-            //this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
 
             // 
@@ -86,7 +85,6 @@
             this.lblDob.Location = new System.Drawing.Point(30, 70);
             this.lblDob.Name = "lblDob";
             this.lblDob.Size = new System.Drawing.Size(74, 16);
-            //this.lblDob.TabIndex = 2;
             this.lblDob.Text = "Date of Birth:";
 
 
@@ -114,7 +112,6 @@
             this.lblAge.Location = new System.Drawing.Point(30, 110);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(28, 16);
-            //this.lblAge.TabIndex = 4;
             this.lblAge.Text = "Age:";
 
             // 
@@ -132,7 +129,6 @@
             this.lblBloodGroup.Location = new System.Drawing.Point(30, 150);
             this.lblBloodGroup.Name = "lblBloodGroup";
             this.lblBloodGroup.Size = new System.Drawing.Size(76, 16);
-            //this.lblBloodGroup.TabIndex = 6;
             this.lblBloodGroup.Text = "Blood Group:";
 
             // 
@@ -160,7 +156,6 @@
             this.lblAddress.Location = new System.Drawing.Point(30, 190);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(53, 16);
-            //this.lblAddress.TabIndex = 6;
             this.lblAddress.Text = "Address:";
 
             // 
@@ -177,7 +172,6 @@
             this.lblContactNumber.Location = new System.Drawing.Point(30, 260);
             this.lblContactNumber.Name = "lblContactNumber";
             this.lblContactNumber.Size = new System.Drawing.Size(100, 16);
-            //this.lblContactNumber.TabIndex = 8;
             this.lblContactNumber.Text = "Contact Number:";
 
             // 
@@ -196,7 +190,6 @@
             this.lblGender.Location = new System.Drawing.Point(30, 300);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(50, 16);
-            //this.lblGender.TabIndex = 10;
             this.lblGender.Text = "Gender:";
 
             // 
@@ -219,7 +212,6 @@
             this.lblPatientId.Location = new System.Drawing.Point(30, 340);
             this.lblPatientId.Name = "lblPatientId";
             this.lblPatientId.Size = new System.Drawing.Size(64, 16);
-            //this.lblPatientId.TabIndex = 12;
             this.lblPatientId.Text = "Patient ID:";
 
             // 

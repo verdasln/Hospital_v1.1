@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
 
 namespace Hospital1._0.Forms
 {
-    public partial class RegisterForm : Form
+    public partial class RegisterForm : XtraForm
     {
         public RegisterForm()
         {

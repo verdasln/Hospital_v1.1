@@ -65,7 +65,7 @@
             this.pictureEditUserIcon.Name = "pictureEditUserIcon";
             this.pictureEditUserIcon.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEditUserIcon.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEditUserIcon.Size = new System.Drawing.Size(74, 85); ;
+            this.pictureEditUserIcon.Size = new System.Drawing.Size(74, 85);
             // 
             // txtUsername
             // 

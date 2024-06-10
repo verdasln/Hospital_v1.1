@@ -162,6 +162,7 @@
   <ItemGroup>
     <Compile Include="Classes\FirestoreHelper.cs" />
     <Compile Include="Classes\LoginData.cs" />
+    <Compile Include="Classes\PatientData.cs" />
     <Compile Include="Forms\AddDiagnosisForm.cs">
       <SubType>Form</SubType>
     </Compile>

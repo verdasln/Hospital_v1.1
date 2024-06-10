@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Windows.Forms;
 
-namespace Hospital1._0
+namespace Hospital1._0.Forms
 {
-    public partial class AddPatientForm : Form
+    public partial class AddPatientForm : XtraForm
     {
         public AddPatientForm()
         {

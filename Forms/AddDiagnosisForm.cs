@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Hospital1._0
 {
-    public partial class AddDiagnosisForm : Form
+    public partial class AddDiagnosisForm : XtraForm
     {
         public AddDiagnosisForm()
         {
