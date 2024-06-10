@@ -8,18 +8,19 @@ namespace Hospital1._0.Forms
 {
     public partial class LoginForm : XtraForm
     {
-       
+
 
         public LoginForm()
         {
             InitializeComponent();
             InitializePlaceholderText();
             Load += LoginForm_Load1;
+            
         }
 
         private void LoginForm_Load1(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -83,5 +84,14 @@ namespace Hospital1._0.Forms
             form.ShowDialog();
             Close();
         }
+
+        private void TxtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
+
     }
 }

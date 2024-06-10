@@ -30,19 +30,19 @@ namespace Hospital1._0.Forms
 
         private void btnCheckPatientHistory_Click(object sender, EventArgs e)
         {
-            var formPopup = new Form();
-            formPopup.Show(this);
+            CheckPatientsHistoryForm form = new CheckPatientsHistoryForm();
+            form.ShowDialog();
         }
 
         private void btnCheckHospitalInfo_Click(object sender, EventArgs e)
         {
-            var formPopup = new Form();
-            formPopup.Show(this);
+            CheckHospitalInfoForm form = new CheckHospitalInfoForm();
+            form.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Close();
         }
     }
 }
