@@ -28,15 +28,15 @@ namespace Hospital1._0.Forms
             txtAge.Text = age.ToString();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private async void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
+                var db = FirestoreHelper.Database;
                 var patientData = GetWriteData();
 
-                FirestoreDb db = FirestoreHelper.Database;
-                DocumentReference docRef = db.Collection("patients").Document(patientData.PatientId.ToString());
-                docRef.SetAsync(patientData);
+                DocumentReference docRef = db.Collection("Patients").Document(patientData.PatientId.ToString());
+                await docRef.SetAsync(patientData);
 
                 MessageBox.Show("Patient information saved successfully.");
 
@@ -100,7 +100,7 @@ namespace Hospital1._0.Forms
             {
                 PatientId = patientId,
                 PatientName = txtName.Text,
-                PatientDateOfBirth = dtDob.DateTime,
+                PatientDateOfBirth = dtDob.DateTime.ToUniversalTime(),
                 PatientAge = patientAge,
                 PatientBloodGroup = cmbBloodGroup.Text,
                 PatientContactNo = txtContactNumber.Text,

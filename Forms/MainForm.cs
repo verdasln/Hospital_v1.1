@@ -24,8 +24,8 @@ namespace Hospital1._0.Forms
 
         private void btnAddDiagnosis_Click(object sender, EventArgs e)
         {
-            var formPopup = new Form();
-            formPopup.Show(this);
+            AddDiagnosisForm form = new AddDiagnosisForm();
+            form.ShowDialog();
         }
 
         private void btnCheckPatientHistory_Click(object sender, EventArgs e)

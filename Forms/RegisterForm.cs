@@ -31,11 +31,13 @@ namespace Hospital1._0.Forms
         private void btnRegister_Click(object sender, EventArgs e)
         {
             var db = FirestoreHelper.Database;
+
             if (CheckIfUserAlreadyExist())
             {
                 MessageBox.Show("User already exists!");
                 return;
             }
+
             var data = GetWriteData();
             DocumentReference docRef = db.Collection("LoginData").Document(data.Username);
             docRef.SetAsync(data);

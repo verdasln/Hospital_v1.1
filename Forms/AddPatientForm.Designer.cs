@@ -97,9 +97,9 @@
                 new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtDob.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
                 new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtDob.Properties.EditFormat.FormatString = "DD/MM/YYYY";
+            this.dtDob.Properties.EditFormat.FormatString = "dd/MM/yyyy";
             this.dtDob.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dtDob.Properties.Mask.EditMask = "DD/MM/YYYY";
+            this.dtDob.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.dtDob.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dtDob.Size = new System.Drawing.Size(250, 22);
             this.dtDob.TabIndex = 1;

@@ -163,6 +163,7 @@
     <Compile Include="Classes\FirestoreHelper.cs" />
     <Compile Include="Classes\LoginData.cs" />
     <Compile Include="Classes\PatientData.cs" />
+    <Compile Include="Classes\PatientDiagnosisData.cs" />
     <Compile Include="Forms\AddDiagnosisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +208,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddDiagnosisForm.resx">
+      <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
