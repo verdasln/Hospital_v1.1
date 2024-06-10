@@ -11,20 +11,27 @@ namespace Hospital1._0.Classes
     internal class PatientData
     {
         [FirestoreProperty]
-        public string PatientId { get; set;}
+        public int PatientId { get; set;}
+
         [FirestoreProperty]
         public string PatientName { get; set;}
+
         [FirestoreProperty]
-        public string PatientGender { get; set;}
+        public DateTime PatientDateOfBirth { get; set;}
+
         [FirestoreProperty]
-        public string PatientDateOfBirth { get; set;}
-        [FirestoreProperty]
-        public string PatientAddress { get; set;}
-        [FirestoreProperty]
-        public string PatientAge { get; set;}
+        public int PatientAge { get; set;}
+
         [FirestoreProperty]
         public string PatientBloodGroup { get; set;}
+
         [FirestoreProperty]
         public string PatientContactNo { get; set;}
+
+        [FirestoreProperty]
+        public string PatientGender { get; set;}
+
+        [FirestoreProperty]
+        public string PatientAddress { get; set;}
     }
 }
