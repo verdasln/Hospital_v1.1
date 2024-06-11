@@ -15,7 +15,11 @@ namespace Hospital1._0.Forms
             InitializeComponent();
             InitializePlaceholderText();
             Load += LoginForm_Load1;
-            
+            this.KeyPreview = true; // Enable form to capture key events
+            this.KeyDown += new KeyEventHandler(LoginForm_KeyDown);
+
+
+
         }
 
         private void LoginForm_Load1(object sender, EventArgs e)
@@ -85,13 +89,24 @@ namespace Hospital1._0.Forms
             Close();
         }
 
-        private void TxtPassword_KeyDown(object sender, KeyEventArgs e)
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnLogin_Click(sender, e);
+                btnLogin_Click(this, new EventArgs());
+                e.SuppressKeyPress = true; 
             }
         }
+
+        private void InputFields_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(this, new EventArgs());
+                e.SuppressKeyPress = true; 
+            }
+        }
+
 
     }
 }
