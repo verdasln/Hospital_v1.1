@@ -25,6 +25,7 @@ namespace Hospital1._0.Forms
 
         #region Windows Form Designer generated code
         private DevExpress.XtraEditors.TextEdit txtPatientId;
+        private DevExpress.XtraEditors.TextEdit txtPatientName;
         private DevExpress.XtraEditors.MemoEdit txtSymptoms;
         private DevExpress.XtraEditors.MemoEdit txtDiagnosis;
         private DevExpress.XtraEditors.MemoEdit txtMedicines;
@@ -36,6 +37,7 @@ namespace Hospital1._0.Forms
         private void InitializeComponent()
         {
             this.txtPatientId = new DevExpress.XtraEditors.TextEdit();
+            this.txtPatientName = new DevExpress.XtraEditors.TextEdit();
             this.txtSymptoms = new DevExpress.XtraEditors.MemoEdit();
             this.txtDiagnosis = new DevExpress.XtraEditors.MemoEdit();
             this.txtMedicines = new DevExpress.XtraEditors.MemoEdit();
@@ -58,6 +60,15 @@ namespace Hospital1._0.Forms
             this.txtPatientId.Properties.Leave += new System.EventHandler(this.TxtPatientId_Leave);
             this.txtPatientId.Size = new System.Drawing.Size(219, 22);
             this.txtPatientId.TabIndex = 0;
+            // 
+            // txtPatientName
+            // 
+            this.txtPatientName.Location = new System.Drawing.Point(131, 70);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Properties.ReadOnly = true;
+            this.txtPatientName.Properties.NullValuePrompt = "Patient Name";
+            this.txtPatientName.Size = new System.Drawing.Size(219, 22);
+            this.txtPatientName.TabIndex = 1;
             // 
             // txtSymptoms
             // 
@@ -129,9 +140,11 @@ namespace Hospital1._0.Forms
             this.Controls.Add(this.txtDiagnosis);
             this.Controls.Add(this.txtSymptoms);
             this.Controls.Add(this.txtPatientId);
+            this.Controls.Add(this.txtPatientName);
             this.Name = "AddDiagnosisForm";
             this.Text = "Add Diagnosis Information";
             ((System.ComponentModel.ISupportInitialize)(this.txtPatientId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPatientName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSymptoms.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiagnosis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicines.Properties)).EndInit();

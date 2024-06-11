@@ -18,6 +18,15 @@ namespace Hospital1._0.Forms
         private async void btnSave_Click(object sender, EventArgs e)
         {
 
+            // Validate required fields
+            if (string.IsNullOrWhiteSpace(txtSymptoms.Text) || string.IsNullOrWhiteSpace(txtDiagnosis.Text) || string.IsNullOrWhiteSpace(txtMedicines.Text))
+            {
+                MessageBox.Show("Please fill in all required fields (Symptoms, Diagnosis, Medicines).");
+                btnSave.Enabled = false;
+                return;
+            }
+
+            btnSave.Enabled = true;
 
             var patientData = new PatientDiagnosisData()
             {
@@ -47,31 +56,40 @@ namespace Hospital1._0.Forms
             }
 
             // Validate if the patient ID exists in the "PatientData" collection
-            bool patientExists = await ValidatePatientIdExists(patientId);
-            if (!patientExists)
+            // Validate if the patient ID exists in the "PatientData" collection
+            var patientData = await GetPatientData(patientId);
+            if (patientData == null)
             {
                 MessageBox.Show("Patient ID does not exist. Please enter a valid Patient ID.");
                 btnSave.Enabled = false;
+                txtPatientName.Text = string.Empty;
                 return;
             }
 
+            // Display the patient's name
+            txtPatientName.Text = patientData.PatientName;
+
             // Enable the save button if the patient ID exists
             btnSave.Enabled = true;
-
         }
-        private async Task<bool> ValidatePatientIdExists(int patientId)
+
+        private async Task<PatientData> GetPatientData(int patientId)
         {
             FirestoreDb db = FirestoreHelper.Database;
             DocumentReference docRef = db.Collection("Patients").Document(patientId.ToString());
             DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-            return snapshot.Exists;
+            if (snapshot.Exists)
+            {
+                return snapshot.ConvertTo<PatientData>();
+            }
+            return null;
         }
 
         private async Task SavePatientDiagnosisData(PatientDiagnosisData data)
         {
             FirestoreDb db = FirestoreHelper.Database;
-            DocumentReference docRef = db.Collection("PatientDiagnoses").Document(data.PatientId.ToString());
-            await docRef.SetAsync(data);
+            CollectionReference colRef = db.Collection("Patients").Document(data.PatientId.ToString()).Collection("Diagnoses");
+            await colRef.AddAsync(data);
         }
 
         private void chkWardRequired_CheckedChanged(object sender, EventArgs e)
@@ -89,6 +107,7 @@ namespace Hospital1._0.Forms
         private void ClearFields()
         {
             txtPatientId.Text = "";
+            txtPatientName.Text = "";
             txtSymptoms.Text = "";
             txtDiagnosis.Text = "";
             txtMedicines.Text = "";
