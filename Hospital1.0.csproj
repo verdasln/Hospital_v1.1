@@ -215,6 +215,9 @@
     <EmbeddedResource Include="Forms\CheckHospitalInfoForm.resx">
       <DependentUpon>CheckHospitalInfoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CheckPatientsHistoryForm.resx">
+      <DependentUpon>CheckPatientsHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
