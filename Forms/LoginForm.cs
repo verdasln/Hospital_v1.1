@@ -15,10 +15,6 @@ namespace Hospital1._0.Forms
             InitializeComponent();
             InitializePlaceholderText();
             Load += LoginForm_Load1;
-            this.KeyPreview = true; // Enable form to capture key events
-            this.KeyDown += new KeyEventHandler(LoginForm_KeyDown);
-
-
 
         }
 
@@ -63,6 +59,7 @@ namespace Hospital1._0.Forms
             }
         }
 
+        // To accept enter key.
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             if (txtPassword.Text == "Password")
@@ -72,6 +69,7 @@ namespace Hospital1._0.Forms
             }
         }
 
+        // If the password field is empty the "Password" will return.
         private void txtPassword_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtPassword.Text))
@@ -89,23 +87,7 @@ namespace Hospital1._0.Forms
             Close();
         }
 
-        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnLogin_Click(this, new EventArgs());
-                e.SuppressKeyPress = true; 
-            }
-        }
 
-        private void InputFields_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnLogin_Click(this, new EventArgs());
-                e.SuppressKeyPress = true; 
-            }
-        }
 
 
     }

@@ -91,9 +91,6 @@ namespace Hospital1._0.Forms
             this.txtPassword.TabIndex = 2;
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
-            // Add KeyDown event handlers for the input fields
-            this.txtUsername.KeyDown += new KeyEventHandler(InputFields_KeyDown);
-            this.txtPassword.KeyDown += new KeyEventHandler(InputFields_KeyDown);
             // 
             // btnLogin
             // 

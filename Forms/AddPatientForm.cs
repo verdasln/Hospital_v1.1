@@ -13,7 +13,7 @@ namespace Hospital1._0.Forms
             InitializeComponent();
         }
 
-
+        // Function to calculate Age automatically.
         private void dtDob_EditValueChanged(object sender, EventArgs e)
         {
             DateTime selectedDate = dtDob.DateTime;
