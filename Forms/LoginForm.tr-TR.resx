@@ -117,123 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="hospitalAddress.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 14pt</value>
+  <data name="btnRegister.Text" xml:space="preserve">
+    <value>Kayıt Ol</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hospitalName.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txtPassword.Properties.NullText" xml:space="preserve">
+    <value>Şifre</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>417, 250</value>
+  <data name="lblLogin.Text" xml:space="preserve">
+    <value>Giriş</value>
   </data>
-  <data name="hospitalAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 116</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="hospitalAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="hospitalAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 122</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="labelControl2.Text" xml:space="preserve">
-    <value>Hospital Address</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
-    <value>labelControl2</value>
-  </data>
-  <data name="&gt;&gt;hospitalName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 16</value>
-  </data>
-  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnLogin.Text" xml:space="preserve">
+    <value>Giriş</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Check Hospital Info</value>
+    <value>Giriş yap</value>
   </data>
-  <data name="&gt;&gt;hospitalName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Hastane OBS</value>
   </data>
-  <data name="&gt;&gt;hospitalAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="txtUsername.Properties.NullText" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CheckHospitalInfoForm</value>
+  <data name="txtUsername.EditValue" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
   </data>
-  <data name="hospitalName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 46</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
-    <value>labelControl1</value>
-  </data>
-  <data name="labelControl1.Text" xml:space="preserve">
-    <value>Hospital name</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
-  </data>
-  <data name="&gt;&gt;hospitalAddress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 16</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;hospitalAddress.Name" xml:space="preserve">
-    <value>hospitalAddress</value>
-  </data>
-  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="hospitalName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 40</value>
-  </data>
-  <data name="&gt;&gt;hospitalName.Name" xml:space="preserve">
-    <value>hospitalName</value>
-  </data>
-  <data name="&gt;&gt;hospitalName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;hospitalAddress.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="hospitalName.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 16.2pt</value>
-  </data>
-  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 49</value>
-  </data>
-  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 128</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
-    <value>tr-TR</value>
+  <data name="txtPassword.EditValue" xml:space="preserve">
+    <value>Şifre</value>
   </data>
 </root>

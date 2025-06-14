@@ -30,6 +30,7 @@ namespace Hospital1._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckHospitalInfoForm));
             this.hospitalName = new DevExpress.XtraEditors.TextEdit();
             this.hospitalAddress = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -40,52 +41,40 @@ namespace Hospital1._0
             // 
             // hospitalName
             // 
+            resources.ApplyResources(this.hospitalName, "hospitalName");
             this.hospitalName.Cursor = System.Windows.Forms.Cursors.No;
-            this.hospitalName.Location = new System.Drawing.Point(150, 46);
             this.hospitalName.Name = "hospitalName";
-            this.hospitalName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hospitalName.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("hospitalName.Properties.Appearance.Font")));
             this.hospitalName.Properties.Appearance.Options.UseFont = true;
             this.hospitalName.Properties.ReadOnly = true;
-            this.hospitalName.Size = new System.Drawing.Size(225, 40);
-            this.hospitalName.TabIndex = 0;
             // 
             // hospitalAddress
             // 
-            this.hospitalAddress.Location = new System.Drawing.Point(150, 122);
+            resources.ApplyResources(this.hospitalAddress, "hospitalAddress");
             this.hospitalAddress.Name = "hospitalAddress";
-            this.hospitalAddress.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.hospitalAddress.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("hospitalAddress.Properties.Appearance.Font")));
             this.hospitalAddress.Properties.Appearance.Options.UseFont = true;
             this.hospitalAddress.Properties.ReadOnly = true;
-            this.hospitalAddress.Size = new System.Drawing.Size(225, 116);
-            this.hospitalAddress.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(47, 49);
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(81, 16);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Hospital name";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(47, 128);
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(81, 16);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Hospital name";
             // 
             // CheckHospitalInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 250);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.hospitalAddress);
             this.Controls.Add(this.hospitalName);
             this.Name = "CheckHospitalInfoForm";
-            this.Text = "CheckHospitalInfo";
             ((System.ComponentModel.ISupportInitialize)(this.hospitalName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalAddress.Properties)).EndInit();
             this.ResumeLayout(false);

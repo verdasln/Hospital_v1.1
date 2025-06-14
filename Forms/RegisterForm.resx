@@ -117,4 +117,204 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btnRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 217</value>
+  </data>
+  <data name="pictureEditUserIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 211</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnReturnToLogin.Name" xml:space="preserve">
+    <value>btnReturnToLogin</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;lblRegister.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnReturnToLogin.Text" xml:space="preserve">
+    <value>Return to login</value>
+  </data>
+  <data name="txtPassword.Properties.NullText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureEditUserIcon.Name" xml:space="preserve">
+    <value>pictureEditUserIcon</value>
+  </data>
+  <data name="lblRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="lblTitle.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt, style=Bold</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 33</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblRegister.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="btnReturnToLogin.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnRegister.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnReturnToLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblRegister.Name" xml:space="preserve">
+    <value>lblRegister</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 29</value>
+  </data>
+  <data name="btnReturnToLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnReturnToLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 48</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 28</value>
+  </data>
+  <data name="&gt;&gt;btnReturnToLogin.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pictureEditUserIcon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btnRegister.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnReturnToLogin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.Name" xml:space="preserve">
+    <value>btnRegister</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>474, 413</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureEditUserIcon.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnRegister.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Hospital Management System</value>
+  </data>
+  <data name="lblRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 117</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 313</value>
+  </data>
+  <data name="&gt;&gt;pictureEditUserIcon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 264</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="txtUsername.Properties.NullText" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="pictureEditUserIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 85</value>
+  </data>
+  <data name="pictureEditUserIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="&gt;&gt;lblRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
+    <value>txtUsername</value>
+  </data>
+  <data name="btnReturnToLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 313</value>
+  </data>
+  <data name="lblRegister.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblRegister.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>tr-TR</value>
+  </metadata>
 </root>

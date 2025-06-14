@@ -1,16 +1,24 @@
-﻿using DevExpress.XtraEditors;
+﻿// Hospital1._0.Forms/AddPatientForm.cs
+using DevExpress.XtraEditors;
 using System;
 using System.Windows.Forms;
 using Hospital1._0.Classes;
-using Google.Cloud.Firestore;
+using Google.Cloud.Firestore; // Ensure this is present
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class AddPatientForm : XtraForm
     {
+
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
         public AddPatientForm()
         {
             InitializeComponent();
+            // Optionally, if you have a label or read-only text box to display the generated ID,
+            // you might initialize it here, e.g., lblPatientIdDisplay.Text = "Will be generated automatically";
         }
 
         // Function to calculate Age automatically.
@@ -19,7 +27,6 @@ namespace Hospital1._0.Forms
             DateTime selectedDate = dtDob.DateTime;
             int age = DateTime.Now.Year - selectedDate.Year;
 
-            // Check if the birthday has occurred this year
             if (DateTime.Now.DayOfYear < selectedDate.DayOfYear)
             {
                 age--;
@@ -32,73 +39,90 @@ namespace Hospital1._0.Forms
         {
             try
             {
+                // 1. Get the next available Patient ID atomically
+                int newPatientId = await PatientIdGenerator.GetNextPatientId();
+
+                // 2. Prepare the PatientData object from form fields (excluding Patient ID input)
+                var patientData = GetWriteData(); // This method now only collects non-ID fields
+                patientData.PatientId = newPatientId; // Assign the newly generated ID
+
+                // 3. Save the patient data to Firestore, using the generated ID as the document ID
                 var db = FirestoreHelper.Database;
-                var patientData = GetWriteData();
-
+                // Important: Use the generated ID as the Document ID in the "Patients" collection
                 DocumentReference docRef = db.Collection("Patients").Document(patientData.PatientId.ToString());
-                await docRef.SetAsync(patientData);
+                await docRef.SetAsync(patientData); // SetAsync will create or overwrite
 
-                MessageBox.Show("Patient information saved successfully.");
+                MessageBox.Show(resMan.GetString("PatientSaved") + $"{newPatientId}",
+                                 resMan.GetString("SaveSuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearFields();
+                // If you have a display field for the new ID, you could set it here:
+                // lblPatientIdDisplay.Text = newPatientId.ToString();
+            }
+            catch (ArgumentException aex) // Catch validation errors specifically
+            {
+                // Localized validation error
+                MessageBox.Show(aex.Message, resMan.GetString("ValidationError"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (InvalidOperationException ioex) // Catch counter generation errors
+            {
+                // Localized ID generation error
+                MessageBox.Show(ioex.Message, resMan.GetString("IDGenerationError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error saving patient information: {ex.Message}");
+                // Localized unexpected error
+                MessageBox.Show($"{resMan.GetString("unexpectedError")} {ex.Message}", resMan.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private PatientData GetWriteData()
         {
-            // Open to view validation checks.
-            #region Validation checks.
-            // Validation checks
-            if (string.IsNullOrEmpty(txtPatientId.Text) || !int.TryParse(txtPatientId.Text, out int patientId))
-            {
-                throw new ArgumentException("Invalid or missing Patient ID");
-            }
+            // Removed validation for txtPatientId as it's no longer manually entered.
+            // Ensure you have a PatientData class with PatientId property.
+            // Example:
+            // public class PatientData { public int PatientId {get;set;} ... other props }
 
+            #region Validation checks for other fields
             if (string.IsNullOrEmpty(txtName.Text))
             {
-                throw new ArgumentException("Patient name is required");
+                throw new ArgumentException(resMan.GetString("NameRequired"));
             }
 
-            if (dtDob.DateTime == DateTime.MinValue)
+            if (dtDob.DateTime == DateTime.MinValue || dtDob.DateTime > DateTime.Now)
             {
-                throw new ArgumentException("Date of birth is required");
+                throw new ArgumentException(resMan.GetString("InvalidDate"));
             }
 
-            if (string.IsNullOrEmpty(txtAge.Text) || !int.TryParse(txtAge.Text, out int patientAge))
+            if (string.IsNullOrEmpty(txtAge.Text) || !int.TryParse(txtAge.Text, out int patientAge) || patientAge < 0)
             {
-                throw new ArgumentException("Invalid or missing age");
+                throw new ArgumentException(resMan.GetString("InvalidAge"));
             }
 
             if (string.IsNullOrEmpty(cmbBloodGroup.Text))
             {
-                throw new ArgumentException("Blood group is required");
+                throw new ArgumentException(resMan.GetString("MissingBlood"));
             }
 
             if (string.IsNullOrEmpty(txtContactNumber.Text))
             {
-                throw new ArgumentException("Contact number is required");
+                throw new ArgumentException(resMan.GetString("MissingNumber"));
             }
 
             if (string.IsNullOrEmpty(cmbGender.Text))
             {
-                throw new ArgumentException("Gender is required");
+                throw new ArgumentException(resMan.GetString("MissingGender"));
             }
 
             if (string.IsNullOrEmpty(txtAddress.Text))
             {
-                throw new ArgumentException("Address is required");
+                throw new ArgumentException(resMan.GetString("MissingAddress"));
             }
-
-
             #endregion
 
             return new PatientData()
             {
-                PatientId = patientId,
+                // PatientId is now assigned by the calling btnSave_Click method after generation.
                 PatientName = txtName.Text,
                 PatientDateOfBirth = dtDob.DateTime.ToUniversalTime(),
                 PatientAge = patientAge,
@@ -111,20 +135,20 @@ namespace Hospital1._0.Forms
 
         private void ClearFields()
         {
-            txtPatientId.Text = string.Empty;
+            // txtPatientId.Text = string.Empty; // Remove this line as txtPatientId is no longer input
             txtName.Text = string.Empty;
-            dtDob.DateTime = DateTime.Now; // or any default value
+            dtDob.DateTime = DateTime.Now; // Or set a sensible default
             txtAge.Text = string.Empty;
-            cmbBloodGroup.SelectedIndex = -1; // reset dropdown
+            cmbBloodGroup.SelectedIndex = -1;
             txtContactNumber.Text = string.Empty;
-            cmbGender.SelectedIndex = -1; // reset dropdown
+            cmbGender.SelectedIndex = -1;
             txtAddress.Text = string.Empty;
+            // If you have a label/readonly textbox for generated ID, clear it or set to "..."
         }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-
     }
 }

@@ -117,4 +117,186 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAddDiagnosis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>548, 560</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;btnCheckHospitalInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnAddPatient.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnAddDiagnosis.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnAddPatient.Name" xml:space="preserve">
+    <value>btnAddPatient</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 57</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 490</value>
+  </data>
+  <data name="&gt;&gt;btnCheckPatientHistory.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnAddDiagnosis.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Hospital Management System</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Hospital Management System</value>
+  </data>
+  <data name="&gt;&gt;btnAddPatient.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblTitle.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnAddDiagnosis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnExit.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAddDiagnosis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 227</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btnAddPatient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 176</value>
+  </data>
+  <data name="&gt;&gt;btnCheckPatientHistory.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnAddPatient.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCheckHospitalInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnCheckHospitalInfo.Name" xml:space="preserve">
+    <value>btnCheckHospitalInfo</value>
+  </data>
+  <data name="btnCheckPatientHistory.Text" xml:space="preserve">
+    <value>Check Patient History</value>
+  </data>
+  <data name="btnAddPatient.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCheckHospitalInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 30</value>
+  </data>
+  <data name="btnAddPatient.Text" xml:space="preserve">
+    <value>Add Patient</value>
+  </data>
+  <data name="btnAddDiagnosis.Text" xml:space="preserve">
+    <value>Add Diagnosis</value>
+  </data>
+  <data name="btnCheckPatientHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="btnCheckPatientHistory.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCheckPatientHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 30</value>
+  </data>
+  <data name="btnAddPatient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 30</value>
+  </data>
+  <data name="&gt;&gt;btnAddDiagnosis.Name" xml:space="preserve">
+    <value>btnAddDiagnosis</value>
+  </data>
+  <data name="&gt;&gt;btnCheckPatientHistory.Name" xml:space="preserve">
+    <value>btnCheckPatientHistory</value>
+  </data>
+  <data name="btnCheckHospitalInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 327</value>
+  </data>
+  <data name="btnAddDiagnosis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 30</value>
+  </data>
+  <data name="&gt;&gt;btnCheckPatientHistory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAddPatient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCheckHospitalInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btnCheckPatientHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 277</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 28</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnCheckHospitalInfo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAddDiagnosis.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCheckHospitalInfo.Text" xml:space="preserve">
+    <value>Check Hospital Info</value>
+  </data>
+  <data name="btnCheckHospitalInfo.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>tr-TR</value>
+  </metadata>
 </root>

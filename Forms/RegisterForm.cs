@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class RegisterForm : XtraForm
     {
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
         public RegisterForm()
         {
             InitializeComponent();
@@ -34,14 +38,14 @@ namespace Hospital1._0.Forms
 
             if (CheckIfUserAlreadyExist())
             {
-                MessageBox.Show("User already exists!");
+                MessageBox.Show(resMan.GetString("UserExists"));
                 return;
             }
 
             var data = GetWriteData();
             DocumentReference docRef = db.Collection("LoginData").Document(data.Username);
             docRef.SetAsync(data);
-            MessageBox.Show("User registered");
+            MessageBox.Show(resMan.GetString("UserRegistered"));
         }
 
         private LoginData GetWriteData()
@@ -69,6 +73,11 @@ namespace Hospital1._0.Forms
                 return true;
             }
             return false;
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

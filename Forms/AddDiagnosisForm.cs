@@ -4,11 +4,17 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class AddDiagnosisForm : XtraForm
     {
+
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+
         public AddDiagnosisForm()
         {
             InitializeComponent();
@@ -21,7 +27,7 @@ namespace Hospital1._0.Forms
             // Validate required fields
             if (string.IsNullOrWhiteSpace(txtSymptoms.Text) || string.IsNullOrWhiteSpace(txtDiagnosis.Text) || string.IsNullOrWhiteSpace(txtMedicines.Text))
             {
-                MessageBox.Show("Please fill in all required fields (Symptoms, Diagnosis, Medicines).");
+                MessageBox.Show(resMan.GetString("MissingFields"));
                 btnSave.Enabled = false;
                 return;
             }
@@ -50,17 +56,16 @@ namespace Hospital1._0.Forms
             // Retrieve and validate the ID from the form field.
             if (!int.TryParse(txtPatientId.Text, out patientId))
             {
-                MessageBox.Show("Please enter a valid Patient ID.");
+                MessageBox.Show(resMan.GetString("MissingID"));
                 btnSave.Enabled = false;
                 return;
             }
 
             // Validate if the patient ID exists in the "PatientData" collection
-            // Validate if the patient ID exists in the "PatientData" collection
             var patientData = await GetPatientData(patientId);
             if (patientData == null)
             {
-                MessageBox.Show("Patient ID does not exist. Please enter a valid Patient ID.");
+                MessageBox.Show(resMan.GetString("IdDosentExist"));
                 btnSave.Enabled = false;
                 txtPatientName.Text = string.Empty;
                 return;
@@ -113,6 +118,16 @@ namespace Hospital1._0.Forms
             txtMedicines.Text = "";
             chkWardRequired.Checked = false;
             cmbTypeOfWard.SelectedIndex = -1;
+        }
+
+        private void AddDiagnosisForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPatientId_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

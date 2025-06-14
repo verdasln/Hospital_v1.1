@@ -36,6 +36,8 @@ namespace Hospital1._0.Forms
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDiagnosisForm));
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.txtPatientId = new DevExpress.XtraEditors.TextEdit();
             this.txtPatientName = new DevExpress.XtraEditors.TextEdit();
             this.txtSymptoms = new DevExpress.XtraEditors.MemoEdit();
@@ -43,8 +45,8 @@ namespace Hospital1._0.Forms
             this.txtMedicines = new DevExpress.XtraEditors.MemoEdit();
             this.chkWardRequired = new DevExpress.XtraEditors.CheckEdit();
             this.cmbTypeOfWard = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtPatientId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPatientName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSymptoms.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiagnosis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicines.Properties)).BeginInit();
@@ -52,87 +54,74 @@ namespace Hospital1._0.Forms
             ((System.ComponentModel.ISupportInitialize)(this.cmbTypeOfWard.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnSave
+            // 
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageOptions.ImageKey = resources.GetString("btnSave.ImageOptions.ImageKey");
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // txtPatientId
             // 
-            this.txtPatientId.Location = new System.Drawing.Point(131, 30);
+            resources.ApplyResources(this.txtPatientId, "txtPatientId");
             this.txtPatientId.Name = "txtPatientId";
-            this.txtPatientId.Properties.NullValuePrompt = "Enter Patient ID";
+            this.txtPatientId.Properties.NullValuePrompt = resources.GetString("txtPatientId.Properties.NullValuePrompt");
             this.txtPatientId.Properties.Leave += new System.EventHandler(this.TxtPatientId_Leave);
-            this.txtPatientId.Size = new System.Drawing.Size(219, 22);
-            this.txtPatientId.TabIndex = 0;
+            this.txtPatientId.EditValueChanged += new System.EventHandler(this.txtPatientId_EditValueChanged);
             // 
             // txtPatientName
             // 
-            this.txtPatientName.Location = new System.Drawing.Point(131, 70);
+            resources.ApplyResources(this.txtPatientName, "txtPatientName");
             this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Properties.NullValuePrompt = resources.GetString("txtPatientName.Properties.NullValuePrompt");
             this.txtPatientName.Properties.ReadOnly = true;
-            this.txtPatientName.Properties.NullValuePrompt = "Patient Name";
-            this.txtPatientName.Size = new System.Drawing.Size(219, 22);
-            this.txtPatientName.TabIndex = 1;
             // 
             // txtSymptoms
             // 
-            this.txtSymptoms.Location = new System.Drawing.Point(131, 70);
+            resources.ApplyResources(this.txtSymptoms, "txtSymptoms");
             this.txtSymptoms.Name = "txtSymptoms";
-            this.txtSymptoms.Properties.NullValuePrompt = "Enter Symptoms";
-            this.txtSymptoms.Size = new System.Drawing.Size(219, 80);
-            this.txtSymptoms.TabIndex = 1;
+            this.txtSymptoms.Properties.NullValuePrompt = resources.GetString("txtSymptoms.Properties.NullValuePrompt");
             // 
             // txtDiagnosis
             // 
-            this.txtDiagnosis.Location = new System.Drawing.Point(131, 170);
+            resources.ApplyResources(this.txtDiagnosis, "txtDiagnosis");
             this.txtDiagnosis.Name = "txtDiagnosis";
-            this.txtDiagnosis.Properties.NullValuePrompt = "Enter Diagnosis";
-            this.txtDiagnosis.Size = new System.Drawing.Size(219, 80);
-            this.txtDiagnosis.TabIndex = 2;
+            this.txtDiagnosis.Properties.NullValuePrompt = resources.GetString("txtDiagnosis.Properties.NullValuePrompt");
             // 
             // txtMedicines
             // 
-            this.txtMedicines.Location = new System.Drawing.Point(131, 270);
+            resources.ApplyResources(this.txtMedicines, "txtMedicines");
             this.txtMedicines.Name = "txtMedicines";
-            this.txtMedicines.Properties.NullValuePrompt = "Enter Medicines";
-            this.txtMedicines.Size = new System.Drawing.Size(219, 80);
-            this.txtMedicines.TabIndex = 3;
+            this.txtMedicines.Properties.NullValuePrompt = resources.GetString("txtMedicines.Properties.NullValuePrompt");
             // 
             // chkWardRequired
             // 
-            this.chkWardRequired.Location = new System.Drawing.Point(131, 370);
+            resources.ApplyResources(this.chkWardRequired, "chkWardRequired");
             this.chkWardRequired.Name = "chkWardRequired";
-            this.chkWardRequired.Properties.Caption = "Ward Required";
-            this.chkWardRequired.Size = new System.Drawing.Size(105, 24);
-            this.chkWardRequired.TabIndex = 4;
+            this.chkWardRequired.Properties.Caption = resources.GetString("chkWardRequired.Properties.Caption");
+            this.chkWardRequired.Properties.DisplayValueChecked = resources.GetString("chkWardRequired.Properties.DisplayValueChecked");
+            this.chkWardRequired.Properties.DisplayValueGrayed = resources.GetString("chkWardRequired.Properties.DisplayValueGrayed");
+            this.chkWardRequired.Properties.DisplayValueUnchecked = resources.GetString("chkWardRequired.Properties.DisplayValueUnchecked");
+            this.chkWardRequired.Properties.GlyphVerticalAlignment = ((DevExpress.Utils.VertAlignment)(resources.GetObject("chkWardRequired.Properties.GlyphVerticalAlignment")));
             this.chkWardRequired.CheckedChanged += new System.EventHandler(this.chkWardRequired_CheckedChanged);
             // 
             // cmbTypeOfWard
             // 
-            this.cmbTypeOfWard.Enabled = false;
-            this.cmbTypeOfWard.Location = new System.Drawing.Point(131, 410);
+            resources.ApplyResources(this.cmbTypeOfWard, "cmbTypeOfWard");
             this.cmbTypeOfWard.Name = "cmbTypeOfWard";
             this.cmbTypeOfWard.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cmbTypeOfWard.Properties.Buttons"))))});
             this.cmbTypeOfWard.Properties.Items.AddRange(new object[] {
-            "General",
-            "Semi-Private",
-            "Private"});
-            this.cmbTypeOfWard.Properties.NullValuePrompt = "Select Type of Ward";
+            resources.GetString("cmbTypeOfWard.Properties.Items"),
+            resources.GetString("cmbTypeOfWard.Properties.Items1"),
+            resources.GetString("cmbTypeOfWard.Properties.Items2")});
+            this.cmbTypeOfWard.Properties.NullValuePrompt = resources.GetString("cmbTypeOfWard.Properties.NullValuePrompt");
             this.cmbTypeOfWard.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbTypeOfWard.Size = new System.Drawing.Size(219, 22);
-            this.cmbTypeOfWard.TabIndex = 5;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(175, 460);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(88, 30);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // AddDiagnosisForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 520);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cmbTypeOfWard);
             this.Controls.Add(this.chkWardRequired);
@@ -142,7 +131,7 @@ namespace Hospital1._0.Forms
             this.Controls.Add(this.txtPatientId);
             this.Controls.Add(this.txtPatientName);
             this.Name = "AddDiagnosisForm";
-            this.Text = "Add Diagnosis Information";
+            this.Load += new System.EventHandler(this.AddDiagnosisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtPatientId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPatientName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSymptoms.Properties)).EndInit();

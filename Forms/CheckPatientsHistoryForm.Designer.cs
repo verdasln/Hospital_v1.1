@@ -36,54 +36,44 @@ namespace Hospital1._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckPatientsHistoryForm));
             this.txtPatientId = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
-
             // 
             // txtPatientId
             // 
-            this.txtPatientId.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.txtPatientId, "txtPatientId");
             this.txtPatientId.Name = "txtPatientId";
-            this.txtPatientId.Size = new System.Drawing.Size(200, 22);
-            this.txtPatientId.TabIndex = 0;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(220, 12);
+            resources.ApplyResources(this.btnSearch, "btnSearch");
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dataGridView
             // 
+            resources.ApplyResources(this.dataGridView, "dataGridView");
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 50);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(760, 400);
-            this.dataGridView.TabIndex = 2;
             // 
-            // CheckPatientHistoryForm
+            // CheckPatientsHistoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtPatientId);
-            this.Name = "CheckPatientHistoryForm";
-            this.Text = "Check Patient History";
+            this.Name = "CheckPatientsHistoryForm";
+            this.Load += new System.EventHandler(this.CheckPatientsHistoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
 
         }
 

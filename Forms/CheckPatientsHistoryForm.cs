@@ -10,11 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0
 {
     public partial class CheckPatientsHistoryForm : Form
     {
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+
         public CheckPatientsHistoryForm()
         {
             InitializeComponent();
@@ -30,12 +35,14 @@ namespace Hospital1._0
             dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "No", DataPropertyName = "No", Width = 50 });
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Symptoms", DataPropertyName = "Symptoms", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Diagnosis", DataPropertyName = "Diagnosis", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Medicines", DataPropertyName = "Medicines", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Ward Required", DataPropertyName = "WardRequired", Width = 100 });
-            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Type of Ward", DataPropertyName = "TypeOfWard", Width = 100 });
+            dataGridView.Columns.Clear(); // Ensure columns are cleared before re-adding, especially if called multiple times
+
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnNo"), DataPropertyName = "No", Width = 50 });
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnSymptoms"), DataPropertyName = "Symptoms", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnDiagnosis"), DataPropertyName = "Diagnosis", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnMedicines"), DataPropertyName = "Medicines", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill });
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnWardRequired"), DataPropertyName = "WardRequired", Width = 100 });
+            dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnTypeOfWard"), DataPropertyName = "TypeOfWard", Width = 100 });
         }
 
         private async void  btnSearch_Click(object sender, EventArgs e)
@@ -43,7 +50,7 @@ namespace Hospital1._0
             // Retrieve and validate the ID from the form field.
             if (!int.TryParse(txtPatientId.Text, out int patientId))
             {
-                MessageBox.Show("Please enter a valid Patient ID.");
+                MessageBox.Show(resMan.GetString("MissingID"));
                 return;
             }
 
@@ -51,7 +58,7 @@ namespace Hospital1._0
             var patientData = await GetPatientData(patientId);
             if (patientData == null)
             {
-                MessageBox.Show("Patient ID does not exist. Please enter a valid Patient ID.");
+                MessageBox.Show(resMan.GetString("IdDosentExist"));
                 return;
             }
 
@@ -105,6 +112,11 @@ namespace Hospital1._0
             dataGridView.DataSource = dataTable;
             // Adjust column and row sizes
             dataGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        private void CheckPatientsHistoryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

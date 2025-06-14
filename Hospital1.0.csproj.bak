@@ -34,14 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v24.2" />
-    <Reference Include="DevExpress.Data.Desktop.v24.2" />
-    <Reference Include="DevExpress.Data.v24.2" />
-    <Reference Include="DevExpress.Utils.v24.2" />
-    <Reference Include="DevExpress.Sparkline.v24.2.Core" />
-    <Reference Include="DevExpress.XtraEditors.v24.2" />
-    <Reference Include="DevExpress.Printing.v24.2.Core" />
-    <Reference Include="DevExpress.Drawing.v24.2" />
+    <Reference Include="DevExpress.BonusSkins.v23.2" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2" />
+    <Reference Include="DevExpress.Data.v23.2" />
+    <Reference Include="DevExpress.Utils.v23.2" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v23.2" />
+    <Reference Include="DevExpress.Printing.v23.2.Core" />
+    <Reference Include="DevExpress.Drawing.v23.2" />
     <Reference Include="Google.Api.CommonProtos, Version=2.15.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>packages\Google.Api.CommonProtos.2.15.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>
     </Reference>
@@ -165,7 +165,6 @@
     <Compile Include="Classes\LoginData.cs" />
     <Compile Include="Classes\PatientData.cs" />
     <Compile Include="Classes\PatientDiagnosisData.cs" />
-    <Compile Include="Classes\PatientIdGenerator.cs" />
     <Compile Include="Forms\AddDiagnosisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,69 +212,27 @@
     <EmbeddedResource Include="Forms\AddDiagnosisForm.resx">
       <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddDiagnosisForm.tr-TR.resx">
-      <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddPatientForm.resx">
-      <DependentUpon>AddPatientForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddPatientForm.tr-TR.resx">
-      <DependentUpon>AddPatientForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CheckHospitalInfoForm.resx">
-      <DependentUpon>CheckHospitalInfoForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CheckHospitalInfoForm.tr-TR.resx">
       <DependentUpon>CheckHospitalInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CheckPatientsHistoryForm.resx">
       <DependentUpon>CheckPatientsHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CheckPatientsHistoryForm.tr-TR.resx">
-      <DependentUpon>CheckPatientsHistoryForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginForm.tr-TR.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainForm.tr-TR.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegisterForm.tr-TR.resx">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\MessagesStrings.tr-TR.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MessagesStrings.tr-TR.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\MessagesStrings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MessagesStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\MessagesStrings.tr-TR.Designer.cs">
-      <DependentUpon>MessagesStrings.tr-TR.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Properties\MessagesStrings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MessagesStrings.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>

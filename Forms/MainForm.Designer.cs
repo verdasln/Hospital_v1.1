@@ -31,6 +31,7 @@ namespace Hospital1._0.Forms
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.lblTitle = new DevExpress.XtraEditors.LabelControl();
             this.btnAddPatient = new DevExpress.XtraEditors.SimpleButton();
             this.btnAddDiagnosis = new DevExpress.XtraEditors.SimpleButton();
@@ -41,62 +42,49 @@ namespace Hospital1._0.Forms
             // 
             // lblTitle
             // 
-            this.lblTitle.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lblTitle.Appearance.Font")));
             this.lblTitle.Appearance.Options.UseFont = true;
-            this.lblTitle.Location = new System.Drawing.Point(102, 57);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(349, 28);
-            this.lblTitle.TabIndex = 4;
-            this.lblTitle.Text = "Hospital Management System";
             // 
             // btnAddPatient
             // 
-            this.btnAddPatient.Location = new System.Drawing.Point(33, 176);
+            resources.ApplyResources(this.btnAddPatient, "btnAddPatient");
+            this.btnAddPatient.ImageOptions.ImageKey = resources.GetString("btnAddPatient.ImageOptions.ImageKey");
             this.btnAddPatient.Name = "btnAddPatient";
-            this.btnAddPatient.Size = new System.Drawing.Size(479, 30);
-            this.btnAddPatient.TabIndex = 0;
-            this.btnAddPatient.Text = "Add Patient";
             this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
             // 
             // btnAddDiagnosis
             // 
-            this.btnAddDiagnosis.Location = new System.Drawing.Point(33, 227);
+            resources.ApplyResources(this.btnAddDiagnosis, "btnAddDiagnosis");
+            this.btnAddDiagnosis.ImageOptions.ImageKey = resources.GetString("btnAddDiagnosis.ImageOptions.ImageKey");
             this.btnAddDiagnosis.Name = "btnAddDiagnosis";
-            this.btnAddDiagnosis.Size = new System.Drawing.Size(479, 30);
-            this.btnAddDiagnosis.TabIndex = 1;
-            this.btnAddDiagnosis.Text = "Add Diagnosis";
             this.btnAddDiagnosis.Click += new System.EventHandler(this.btnAddDiagnosis_Click);
             // 
             // btnCheckPatientHistory
             // 
-            this.btnCheckPatientHistory.Location = new System.Drawing.Point(33, 277);
+            resources.ApplyResources(this.btnCheckPatientHistory, "btnCheckPatientHistory");
+            this.btnCheckPatientHistory.ImageOptions.ImageKey = resources.GetString("btnCheckPatientHistory.ImageOptions.ImageKey");
             this.btnCheckPatientHistory.Name = "btnCheckPatientHistory";
-            this.btnCheckPatientHistory.Size = new System.Drawing.Size(479, 30);
-            this.btnCheckPatientHistory.TabIndex = 2;
-            this.btnCheckPatientHistory.Text = "Check Patient History";
             this.btnCheckPatientHistory.Click += new System.EventHandler(this.btnCheckPatientHistory_Click);
             // 
             // btnCheckHospitalInfo
             // 
-            this.btnCheckHospitalInfo.Location = new System.Drawing.Point(33, 327);
+            resources.ApplyResources(this.btnCheckHospitalInfo, "btnCheckHospitalInfo");
+            this.btnCheckHospitalInfo.ImageOptions.ImageKey = resources.GetString("btnCheckHospitalInfo.ImageOptions.ImageKey");
             this.btnCheckHospitalInfo.Name = "btnCheckHospitalInfo";
-            this.btnCheckHospitalInfo.Size = new System.Drawing.Size(479, 30);
-            this.btnCheckHospitalInfo.TabIndex = 3;
-            this.btnCheckHospitalInfo.Text = "Check Hospital Info";
             this.btnCheckHospitalInfo.Click += new System.EventHandler(this.btnCheckHospitalInfo_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(221, 490);
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.ImageOptions.ImageKey = resources.GetString("btnExit.ImageOptions.ImageKey");
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(94, 29);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Exit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(548, 560);
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnAddPatient);
             this.Controls.Add(this.btnAddDiagnosis);
@@ -104,7 +92,6 @@ namespace Hospital1._0.Forms
             this.Controls.Add(this.btnCheckHospitalInfo);
             this.Controls.Add(this.btnExit);
             this.Name = "MainForm";
-            this.Text = "Hospital Management System";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

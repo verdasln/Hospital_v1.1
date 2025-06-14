@@ -3,12 +3,16 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class LoginForm : XtraForm
     {
-
+       
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
 
         public LoginForm()
         {
@@ -50,12 +54,12 @@ namespace Hospital1._0.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Incorrect credentials");
+                    MessageBox.Show(resMan.GetString("IncorrectCredentials"));
                 }
             }
             else
             {
-                MessageBox.Show("Invalid entry");
+                MessageBox.Show(resMan.GetString("InvalidEntry"));
             }
         }
 
@@ -87,8 +91,9 @@ namespace Hospital1._0.Forms
             Close();
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
