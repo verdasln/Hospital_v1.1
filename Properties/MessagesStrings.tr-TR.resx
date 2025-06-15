@@ -138,6 +138,12 @@
   <data name="GridColumnWardRequired" xml:space="preserve">
     <value>Koğuş Gerekli</value>
   </data>
+  <data name="HospitalAddress" xml:space="preserve">
+    <value>Elazığ, Türkiye</value>
+  </data>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Fırat Üniversitesi Hastanesi</value>
+  </data>
   <data name="IdDosentExist" xml:space="preserve">
     <value>Hasta ID mevcut değil. Lütfen geçerli bir hasta ID girin.</value>
   </data>
@@ -177,6 +183,9 @@
   <data name="NameRequired" xml:space="preserve">
     <value>Hasta adı gereklidir.</value>
   </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
   <data name="PatientSaved" xml:space="preserve">
     <value>Hasta bilgileri başarıyla kaydedildi. Yeni hasta ID:</value>
   </data>
@@ -188,6 +197,9 @@
   </data>
   <data name="UserExists" xml:space="preserve">
     <value>Kullanıcı zaten var!</value>
+  </data>
+  <data name="UsernamePlaceholder" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
   </data>
   <data name="UserRegistered" xml:space="preserve">
     <value>Kullanıcı kaydedildi.</value>

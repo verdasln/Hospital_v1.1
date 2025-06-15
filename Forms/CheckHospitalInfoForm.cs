@@ -10,11 +10,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources; // For ResourceManager
+using System.Globalization; // For CultureInfo (if changing language at runtime)
+using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0
 {
     public partial class CheckHospitalInfoForm : XtraForm
     {
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+
         public CheckHospitalInfoForm()
         {
             InitializeComponent();
@@ -33,6 +38,23 @@ namespace Hospital1._0
                 hospitalName.Text = hospitalInfo.HospitalName;
                 hospitalAddress.Text = hospitalInfo.HospitalAddress;
                 AdjustFontSize(hospitalName);
+            }
+            else
+            {
+                HospitalInfo defaultHospitalInfo = new HospitalInfo
+                {
+                    HospitalName = resMan.GetString("HospitalName"),
+                    HospitalAddress = resMan.GetString("HospitalAddress")
+                };
+
+                
+                await docRef.SetAsync(defaultHospitalInfo);
+
+                
+                hospitalName.Text = defaultHospitalInfo.HospitalName;
+                hospitalAddress.Text = defaultHospitalInfo.HospitalAddress;
+                AdjustFontSize(hospitalName);
+
             }
         }
 

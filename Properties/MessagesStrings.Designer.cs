@@ -124,6 +124,24 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Elazığ, Türkiye.
+        /// </summary>
+        internal static string HospitalAddress {
+            get {
+                return ResourceManager.GetString("HospitalAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fırat University Hospital.
+        /// </summary>
+        internal static string HospitalName {
+            get {
+                return ResourceManager.GetString("HospitalName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Patient ID does not exist. Please enter a valid Patient ID..
         /// </summary>
         internal static string IdDosentExist {
@@ -241,6 +259,15 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string PasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("PasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Patient information saved successfully. New Patient ID: .
         /// </summary>
         internal static string PatientSaved {
@@ -273,6 +300,15 @@ namespace Hospital1._0.Properties {
         internal static string UserExists {
             get {
                 return ResourceManager.GetString("UserExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string UsernamePlaceholder {
+            get {
+                return ResourceManager.GetString("UsernamePlaceholder", resourceCulture);
             }
         }
         

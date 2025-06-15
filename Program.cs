@@ -27,11 +27,6 @@ namespace Hospital1._0
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 
-            // For Turkish Locale
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("tr-TR");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr-TR");
-
-
             Application.Run(new LoginForm());
         }
     }

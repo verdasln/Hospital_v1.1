@@ -138,6 +138,12 @@
   <data name="GridColumnWardRequired" xml:space="preserve">
     <value>Ward Required</value>
   </data>
+  <data name="HospitalAddress" xml:space="preserve">
+    <value>Elazığ, Türkiye</value>
+  </data>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Fırat University Hospital</value>
+  </data>
   <data name="IdDosentExist" xml:space="preserve">
     <value>Patient ID does not exist. Please enter a valid Patient ID.</value>
   </data>
@@ -177,6 +183,9 @@
   <data name="NameRequired" xml:space="preserve">
     <value>Patient name is required.</value>
   </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Password</value>
+  </data>
   <data name="PatientSaved" xml:space="preserve">
     <value>Patient information saved successfully. New Patient ID: </value>
   </data>
@@ -188,6 +197,9 @@
   </data>
   <data name="UserExists" xml:space="preserve">
     <value>User already exists!</value>
+  </data>
+  <data name="UsernamePlaceholder" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="UserRegistered" xml:space="preserve">
     <value>User registered.</value>

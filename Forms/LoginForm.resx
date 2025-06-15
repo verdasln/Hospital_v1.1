@@ -134,6 +134,12 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="btnToggleLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnToggleLanguage.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 110</value>
   </data>
@@ -149,41 +155,53 @@
   <data name="btnLogin.ImageOptions.ImageKey" xml:space="preserve">
     <value />
   </data>
+  <data name="btnToggleLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
   <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
-    <value>btnLogin</value>
+  <data name="btnToggleLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 12</value>
+  </data>
+  <data name="btnToggleLanguage.Text" xml:space="preserve">
+    <value>simpleButton1</value>
   </data>
   <data name="lblLogin.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14pt, style=Bold</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
   <data name="lblLogin.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Log in</value>
   </data>
   <data name="&gt;&gt;lblLogin.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>404, 33</value>
   </data>
   <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnLogin.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Log in</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Log in</value>
   </data>
   <data name="&gt;&gt;btnRegister.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnToggleLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
@@ -192,10 +210,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnRegister.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 29</value>
+  </data>
+  <data name="txtUsername.EditValue" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -224,9 +245,6 @@
   <data name="&gt;&gt;lblLogin.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 22</value>
   </data>
@@ -236,20 +254,20 @@
   <data name="&gt;&gt;btnRegister.Name" xml:space="preserve">
     <value>btnRegister</value>
   </data>
-  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 309</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>493, 382</value>
   </data>
-  <data name="&gt;&gt;btnRegister.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;btnToggleLanguage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pictureEditUserIcon.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;lblLogin.Name" xml:space="preserve">
     <value>lblLogin</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
+  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
+    <value>btnLogin</value>
   </data>
   <data name="lblLogin.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -275,14 +293,17 @@
   <data name="txtUsername.Properties.NullText" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="lblLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 28</value>
+  <data name="txtPassword.EditValue" xml:space="preserve">
+    <value>Password</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>493, 382</value>
+  <data name="lblLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 28</value>
   </data>
   <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnToggleLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pictureEditUserIcon.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 85</value>
@@ -305,6 +326,18 @@
   <data name="&gt;&gt;pictureEditUserIcon.Name" xml:space="preserve">
     <value>pictureEditUserIcon</value>
   </data>
+  <data name="&gt;&gt;btnRegister.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 309</value>
+  </data>
+  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnToggleLanguage.Name" xml:space="preserve">
+    <value>btnToggleLanguage</value>
+  </data>
   <data name="&gt;&gt;lblLogin.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -313,8 +346,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>tr-TR</value>
   </metadata>
 </root>

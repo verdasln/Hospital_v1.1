@@ -40,6 +40,7 @@ namespace Hospital1._0.Forms
             this.pictureEditUserIcon = new DevExpress.XtraEditors.PictureEdit();
             this.txtUsername = new DevExpress.XtraEditors.TextEdit();
             this.txtPassword = new DevExpress.XtraEditors.TextEdit();
+            this.btnToggleLanguage = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEditUserIcon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsername.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
@@ -95,10 +96,18 @@ namespace Hospital1._0.Forms
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
+            // btnToggleLanguage
+            // 
+            resources.ApplyResources(this.btnToggleLanguage, "btnToggleLanguage");
+            this.btnToggleLanguage.ImageOptions.ImageKey = resources.GetString("btnToggleLanguage.ImageOptions.ImageKey");
+            this.btnToggleLanguage.Name = "btnToggleLanguage";
+            this.btnToggleLanguage.Click += new System.EventHandler(this.btnToggleLanguage_Click);
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnToggleLanguage);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.pictureEditUserIcon);
@@ -116,7 +125,7 @@ namespace Hospital1._0.Forms
 
         }
 
-
+        private DevExpress.XtraEditors.SimpleButton btnToggleLanguage;
     }
 
 }
