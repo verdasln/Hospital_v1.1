@@ -1,19 +1,17 @@
 ﻿// Hospital1._0.Forms/AddPatientForm.cs
-using DevExpress.XtraEditors;
 using System;
-using System.Windows.Forms;
-using Hospital1._0.Classes;
-using Google.Cloud.Firestore; // Ensure this is present
 using System.Resources; // For ResourceManager
-using System.Globalization; // For CultureInfo (if changing language at runtime)
-using System.Threading; // For Thread (if changing language at runtime)
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using Google.Cloud.Firestore; // Ensure this is present
+using Hospital1._0.Classes;
 
 namespace Hospital1._0.Forms
 {
     public partial class AddPatientForm : XtraForm
     {
 
-        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.MessagesStrings", typeof(Program).Assembly);
         public AddPatientForm()
         {
             InitializeComponent();

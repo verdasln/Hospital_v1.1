@@ -120,6 +120,12 @@
   <data name="Error" xml:space="preserve">
     <value>Error!</value>
   </data>
+  <data name="FailedToLoadNews" xml:space="preserve">
+    <value>Failed to load medical news:</value>
+  </data>
+  <data name="FailedToOpenLink" xml:space="preserve">
+    <value>Failed to open link:</value>
+  </data>
   <data name="GridColumnDiagnosis" xml:space="preserve">
     <value>Diagnosis</value>
   </data>
@@ -162,6 +168,15 @@
   <data name="InvalidEntry" xml:space="preserve">
     <value>Invalid entry.</value>
   </data>
+  <data name="LatestNewsGroupTitle" xml:space="preserve">
+    <value>Latest Medical News</value>
+  </data>
+  <data name="LoadingNews" xml:space="preserve">
+    <value>Loading Medical News...</value>
+  </data>
+  <data name="MainFormTitle" xml:space="preserve">
+    <value>Hospital Management System</value>
+  </data>
   <data name="MissingAddress" xml:space="preserve">
     <value>Address is required.</value>
   </data>
@@ -183,17 +198,35 @@
   <data name="NameRequired" xml:space="preserve">
     <value>Patient name is required.</value>
   </data>
+  <data name="NewsLoadError" xml:space="preserve">
+    <value>Error loading news.</value>
+  </data>
+  <data name="NoNewsAvailable" xml:space="preserve">
+    <value>No medical news available at the moment.</value>
+  </data>
   <data name="PasswordPlaceholder" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="PatientSaved" xml:space="preserve">
     <value>Patient information saved successfully. New Patient ID: </value>
   </data>
+  <data name="ReadMoreButton" xml:space="preserve">
+    <value>Read More</value>
+  </data>
   <data name="SaveSuccessTitle" xml:space="preserve">
     <value>Successfully Saved</value>
   </data>
+  <data name="ToggleToEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ToggleToTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
   <data name="unexpectedError" xml:space="preserve">
     <value>An unexpected error occurred:</value>
+  </data>
+  <data name="UnknownSource" xml:space="preserve">
+    <value>Unknown Source</value>
   </data>
   <data name="UserExists" xml:space="preserve">
     <value>User already exists!</value>

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Windows.Forms;
-using DevExpress.LookAndFeel;
-using DevExpress.Skins;
-using DevExpress.UserSkins;
 using Hospital1._0.Classes;
 using Hospital1._0.Forms;
 
@@ -20,6 +16,7 @@ namespace Hospital1._0
         [STAThread]
         static void Main()
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
             Application.EnableVisualStyles();
             FirestoreHelper.SetEnvironmentVariable();
             Application.SetCompatibleTextRenderingDefault(false);

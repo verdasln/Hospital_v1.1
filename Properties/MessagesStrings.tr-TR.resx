@@ -120,6 +120,12 @@
   <data name="Error" xml:space="preserve">
     <value>Hata!</value>
   </data>
+  <data name="FailedToLoadNews" xml:space="preserve">
+    <value>Tıbbi haberler yüklenemedi:</value>
+  </data>
+  <data name="FailedToOpenLink" xml:space="preserve">
+    <value>Bağlantı açılamadı:</value>
+  </data>
   <data name="GridColumnDiagnosis" xml:space="preserve">
     <value>Teşhis</value>
   </data>
@@ -162,6 +168,15 @@
   <data name="InvalidEntry" xml:space="preserve">
     <value>Geçersiz giriş.</value>
   </data>
+  <data name="LatestNewsGroupTitle" xml:space="preserve">
+    <value>Son Tıbbi Haberler</value>
+  </data>
+  <data name="LoadingNews" xml:space="preserve">
+    <value>Tıbbi Haberler Yükleniyor...</value>
+  </data>
+  <data name="MainFormTitle" xml:space="preserve">
+    <value>Hastane Yönetim Sistemi</value>
+  </data>
   <data name="MissingAddress" xml:space="preserve">
     <value>Adres gereklidir.</value>
   </data>
@@ -183,17 +198,35 @@
   <data name="NameRequired" xml:space="preserve">
     <value>Hasta adı gereklidir.</value>
   </data>
+  <data name="NewsLoadError" xml:space="preserve">
+    <value>Haberler yüklenirken bir hata oluştu.</value>
+  </data>
+  <data name="NoNewsAvailable" xml:space="preserve">
+    <value>Şu anda tıbbi haber bulunmamaktadır.</value>
+  </data>
   <data name="PasswordPlaceholder" xml:space="preserve">
     <value>Şifre</value>
   </data>
   <data name="PatientSaved" xml:space="preserve">
     <value>Hasta bilgileri başarıyla kaydedildi. Yeni hasta ID:</value>
   </data>
+  <data name="ReadMoreButton" xml:space="preserve">
+    <value>Fazla Oku</value>
+  </data>
   <data name="SaveSuccessTitle" xml:space="preserve">
     <value>Başarıyla Kaydedildi</value>
   </data>
+  <data name="ToggleToEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ToggleToTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
   <data name="unexpectedError" xml:space="preserve">
     <value>Beklenmeyen bir hata oluştu:</value>
+  </data>
+  <data name="UnknownSource" xml:space="preserve">
+    <value>Bilinmeyen Kaynak</value>
   </data>
   <data name="UserExists" xml:space="preserve">
     <value>Kullanıcı zaten var!</value>

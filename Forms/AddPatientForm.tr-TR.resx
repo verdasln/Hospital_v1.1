@@ -117,8 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 16</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>İsim:</value>
+  </data>
+  <data name="lblDob.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 16</value>
+  </data>
   <data name="lblDob.Text" xml:space="preserve">
     <value>Doğum Tarihi:</value>
+  </data>
+  <data name="lblAge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 16</value>
+  </data>
+  <data name="lblAge.Text" xml:space="preserve">
+    <value>Yaş</value>
+  </data>
+  <data name="lblBloodGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="lblBloodGroup.Text" xml:space="preserve">
+    <value>Kan Grubu:</value>
+  </data>
+  <data name="lblAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="lblAddress.Text" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="lblContactNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 16</value>
+  </data>
+  <data name="lblContactNumber.Text" xml:space="preserve">
+    <value>İletişim Numarası:</value>
+  </data>
+  <data name="lblGender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
+  </data>
+  <data name="lblGender.Text" xml:space="preserve">
+    <value>Cinsiyet:</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 351</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Kaydedin</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 351</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>İptal Edin</value>
+  </data>
+  <data name="cmbGender.Properties.Items" xml:space="preserve">
+    <value>Erkek</value>
   </data>
   <data name="cmbGender.Properties.Items1" xml:space="preserve">
     <value>Bayan</value>
@@ -126,71 +181,10 @@
   <data name="cmbGender.Properties.Items2" xml:space="preserve">
     <value>Diğer</value>
   </data>
-  <data name="btnCancel.ImageOptions.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblName.Text" xml:space="preserve">
-    <value>İsim:</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>İptal Edin</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items4" xml:space="preserve">
-    <value>AB+</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items5" xml:space="preserve">
-    <value>AB-</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items6" xml:space="preserve">
-    <value>O+</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items7" xml:space="preserve">
-    <value>O-</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items1" xml:space="preserve">
-    <value>A-</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items2" xml:space="preserve">
-    <value>B+</value>
-  </data>
-  <data name="cmbBloodGroup.Properties.Items3" xml:space="preserve">
-    <value>B-</value>
-  </data>
-  <data name="cmbGender.Properties.Items" xml:space="preserve">
-    <value>Erkek</value>
-  </data>
-  <data name="lblContactNumber.Text" xml:space="preserve">
-    <value>İletişim Numarası:</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>438, 411</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Hasta Ekle</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Kaydedin</value>
-  </data>
-  <data name="lblBloodGroup.Text" xml:space="preserve">
-    <value>Kan Grubu:</value>
-  </data>
-  <data name="lblGender.Text" xml:space="preserve">
-    <value>Cinsiyet:</value>
-  </data>
-  <data name="lblAge.Text" xml:space="preserve">
-    <value>Yaş</value>
-  </data>
-  <data name="lblAddress.Text" xml:space="preserve">
-    <value>Adres</value>
-  </data>
-  <data name="lblPatientId.Text" xml:space="preserve">
-    <value>Hasta ID:</value>
-  </data>
-  <data name="btnSave.ImageOptions.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cmbBloodGroup.Properties.Items" xml:space="preserve">
-    <value>A+</value>
   </data>
 </root>

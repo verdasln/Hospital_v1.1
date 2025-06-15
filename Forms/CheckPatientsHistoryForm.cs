@@ -1,24 +1,17 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Resources; // For ResourceManager
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
-using System.Resources; // For ResourceManager
-using System.Globalization; // For CultureInfo (if changing language at runtime)
-using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0
 {
     public partial class CheckPatientsHistoryForm : Form
     {
-        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.MessagesStrings", typeof(Program).Assembly);
 
         public CheckPatientsHistoryForm()
         {
@@ -45,7 +38,7 @@ namespace Hospital1._0
             dataGridView.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = resMan.GetString("GridColumnTypeOfWard"), DataPropertyName = "TypeOfWard", Width = 100 });
         }
 
-        private async void  btnSearch_Click(object sender, EventArgs e)
+        private async void btnSearch_Click(object sender, EventArgs e)
         {
             // Retrieve and validate the ID from the form field.
             if (!int.TryParse(txtPatientId.Text, out int patientId))

@@ -1,9 +1,8 @@
 ﻿// Hospital1._0.Classes/PatientIdGenerator.cs
-using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Windows.Forms; // Add this using statement for MessageBox.Show
+using Google.Cloud.Firestore;
 
 namespace Hospital1._0.Classes
 {

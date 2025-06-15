@@ -1,24 +1,14 @@
-﻿using DevExpress.XtraEditors;
+﻿using System.Drawing;
+using System.Resources; // For ResourceManager
+using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Resources; // For ResourceManager
-using System.Globalization; // For CultureInfo (if changing language at runtime)
-using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0
 {
     public partial class CheckHospitalInfoForm : XtraForm
     {
-        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.MessagesStrings", typeof(Program).Assembly);
 
         public CheckHospitalInfoForm()
         {
@@ -47,10 +37,10 @@ namespace Hospital1._0
                     HospitalAddress = resMan.GetString("HospitalAddress")
                 };
 
-                
+
                 await docRef.SetAsync(defaultHospitalInfo);
 
-                
+
                 hospitalName.Text = defaultHospitalInfo.HospitalName;
                 hospitalAddress.Text = defaultHospitalInfo.HospitalAddress;
                 AdjustFontSize(hospitalName);

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Google.Cloud.Firestore;
 
 namespace Hospital1._0.Classes
@@ -11,27 +7,27 @@ namespace Hospital1._0.Classes
     internal class PatientData
     {
         [FirestoreProperty]
-        public int PatientId { get; set;}
+        public int PatientId { get; set; }
 
         [FirestoreProperty]
-        public string PatientName { get; set;}
+        public string PatientName { get; set; }
 
         [FirestoreProperty]
-        public DateTime PatientDateOfBirth { get; set;}
+        public DateTime PatientDateOfBirth { get; set; }
 
         [FirestoreProperty]
-        public int PatientAge { get; set;}
+        public int PatientAge { get; set; }
 
         [FirestoreProperty]
-        public string PatientBloodGroup { get; set;}
+        public string PatientBloodGroup { get; set; }
 
         [FirestoreProperty]
-        public string PatientContactNo { get; set;}
+        public string PatientContactNo { get; set; }
 
         [FirestoreProperty]
-        public string PatientGender { get; set;}
+        public string PatientGender { get; set; }
 
         [FirestoreProperty]
-        public string PatientAddress { get; set;}
+        public string PatientAddress { get; set; }
     }
 }

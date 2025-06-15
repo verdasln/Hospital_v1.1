@@ -1,18 +1,11 @@
-﻿using DevExpress.XtraEditors;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using System.Globalization; // For CultureInfo
+using System.Resources;    // For ResourceManager
+using System.Threading;   // For Thread
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
-using System.Resources;    // For ResourceManager
-using System.Globalization; // For CultureInfo
-using System.Threading;   // For Thread
 
 namespace Hospital1._0.Forms
 {
@@ -22,10 +15,6 @@ namespace Hospital1._0.Forms
 
         public LoginForm()
         {
-            // --- DEBUG STARTUP LANGUAGE ---
-            MessageBox.Show($"[LoginForm Constructor] Initial Thread UICulture: {Thread.CurrentThread.CurrentUICulture.Name}", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            MessageBox.Show($"[LoginForm Constructor] Saved Language Setting: '{Properties.Settings.Default.Language}'", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
 
             // Set the initial culture based on a default or a saved preference
             string currentLanguageSetting = Properties.Settings.Default.Language;
@@ -51,8 +40,6 @@ namespace Hospital1._0.Forms
             Properties.Settings.Default.Language = cultureName; // Save language preference
             Properties.Settings.Default.Save();
 
-            // --- DEBUG SetLanguage CALL ---
-            MessageBox.Show($"[SetLanguage] Culture set to: {Thread.CurrentThread.CurrentUICulture.Name}", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         // Apply localized text to controls that are designed in the form
@@ -147,8 +134,6 @@ namespace Hospital1._0.Forms
             string currentCultureName = Thread.CurrentThread.CurrentUICulture.Name;
             string newCultureName;
 
-            // --- DEBUG btnToggleLanguage_Click START ---
-            MessageBox.Show($"[btnToggleLanguage_Click] Current UI Culture BEFORE change: {currentCultureName}", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             if (currentCultureName == "en-US" || currentCultureName == "en") // Also check for neutral culture "en"
             {
@@ -160,9 +145,6 @@ namespace Hospital1._0.Forms
             }
 
             SetLanguage(newCultureName); // Set the new language and save preference
-
-            // --- DEBUG btnToggleLanguage_Click AFTER SetLanguage ---
-            MessageBox.Show($"[btnToggleLanguage_Click] New UI Culture AFTER change: {Thread.CurrentThread.CurrentUICulture.Name}", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             // Recreate the login form to apply the new language to all controls
@@ -177,7 +159,7 @@ namespace Hospital1._0.Forms
         // If LoginForm_Load1 was empty, it can be removed.
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            // ApplyLocalizedTextToControls(); // This is already called in the constructor, so not strictly needed here unless you have late-loading elements
+
         }
     }
 }

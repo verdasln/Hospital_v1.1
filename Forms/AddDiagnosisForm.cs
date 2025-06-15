@@ -1,19 +1,17 @@
 ﻿using System;
+using System.Resources; // For ResourceManager
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
-using System.Resources; // For ResourceManager
-using System.Globalization; // For CultureInfo (if changing language at runtime)
-using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class AddDiagnosisForm : XtraForm
     {
 
-        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.MessagesStrings", typeof(Program).Assembly);
 
         public AddDiagnosisForm()
         {

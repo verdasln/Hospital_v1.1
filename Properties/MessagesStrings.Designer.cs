@@ -70,6 +70,24 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to load medical news:.
+        /// </summary>
+        internal static string FailedToLoadNews {
+            get {
+                return ResourceManager.GetString("FailedToLoadNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to open link:.
+        /// </summary>
+        internal static string FailedToOpenLink {
+            get {
+                return ResourceManager.GetString("FailedToOpenLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Diagnosis.
         /// </summary>
         internal static string GridColumnDiagnosis {
@@ -196,6 +214,33 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Latest Medical News.
+        /// </summary>
+        internal static string LatestNewsGroupTitle {
+            get {
+                return ResourceManager.GetString("LatestNewsGroupTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading Medical News....
+        /// </summary>
+        internal static string LoadingNews {
+            get {
+                return ResourceManager.GetString("LoadingNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hospital Management System.
+        /// </summary>
+        internal static string MainFormTitle {
+            get {
+                return ResourceManager.GetString("MainFormTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address is required..
         /// </summary>
         internal static string MissingAddress {
@@ -259,6 +304,24 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error loading news..
+        /// </summary>
+        internal static string NewsLoadError {
+            get {
+                return ResourceManager.GetString("NewsLoadError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No medical news available at the moment..
+        /// </summary>
+        internal static string NoNewsAvailable {
+            get {
+                return ResourceManager.GetString("NoNewsAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string PasswordPlaceholder {
@@ -277,6 +340,15 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Read More.
+        /// </summary>
+        internal static string ReadMoreButton {
+            get {
+                return ResourceManager.GetString("ReadMoreButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Successfully Saved.
         /// </summary>
         internal static string SaveSuccessTitle {
@@ -286,11 +358,38 @@ namespace Hospital1._0.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        internal static string ToggleToEnglish {
+            get {
+                return ResourceManager.GetString("ToggleToEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Türkçe.
+        /// </summary>
+        internal static string ToggleToTurkish {
+            get {
+                return ResourceManager.GetString("ToggleToTurkish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An unexpected error occurred:.
         /// </summary>
         internal static string unexpectedError {
             get {
                 return ResourceManager.GetString("unexpectedError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown Source.
+        /// </summary>
+        internal static string UnknownSource {
+            get {
+                return ResourceManager.GetString("UnknownSource", resourceCulture);
             }
         }
         

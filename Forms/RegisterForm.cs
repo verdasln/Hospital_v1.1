@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Resources; // For ResourceManager
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;
-using System.Resources; // For ResourceManager
-using System.Globalization; // For CultureInfo (if changing language at runtime)
-using System.Threading; // For Thread (if changing language at runtime)
 
 namespace Hospital1._0.Forms
 {
     public partial class RegisterForm : XtraForm
     {
-        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.Messages", typeof(Program).Assembly);
+        private ResourceManager resMan = new ResourceManager("Hospital1._0.Properties.MessagesStrings", typeof(Program).Assembly);
         public RegisterForm()
         {
             InitializeComponent();
@@ -50,7 +41,7 @@ namespace Hospital1._0.Forms
 
         private LoginData GetWriteData()
         {
-            
+
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
 

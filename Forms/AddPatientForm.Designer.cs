@@ -35,8 +35,6 @@
         private DevExpress.XtraEditors.TextEdit txtContactNumber;
         private DevExpress.XtraEditors.LabelControl lblGender;
         private DevExpress.XtraEditors.ComboBoxEdit cmbGender;
-        private DevExpress.XtraEditors.LabelControl lblPatientId;
-        private DevExpress.XtraEditors.TextEdit txtPatientId;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
 
@@ -50,7 +48,6 @@
             this.lblAddress = new DevExpress.XtraEditors.LabelControl();
             this.lblContactNumber = new DevExpress.XtraEditors.LabelControl();
             this.lblGender = new DevExpress.XtraEditors.LabelControl();
-            this.lblPatientId = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
@@ -60,7 +57,6 @@
             this.txtAddress = new DevExpress.XtraEditors.MemoEdit();
             this.txtContactNumber = new DevExpress.XtraEditors.TextEdit();
             this.cmbGender = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtPatientId = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDob.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDob.Properties.CalendarTimeProperties)).BeginInit();
@@ -69,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGender.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPatientId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -107,22 +102,15 @@
             resources.ApplyResources(this.lblGender, "lblGender");
             this.lblGender.Name = "lblGender";
             // 
-            // lblPatientId
-            // 
-            resources.ApplyResources(this.lblPatientId, "lblPatientId");
-            this.lblPatientId.Name = "lblPatientId";
-            // 
             // btnSave
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageOptions.ImageKey = resources.GetString("btnSave.ImageOptions.ImageKey");
             this.btnSave.Name = "btnSave";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.ImageOptions.ImageKey = resources.GetString("btnCancel.ImageOptions.ImageKey");
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -191,22 +179,12 @@
             resources.GetString("cmbGender.Properties.Items1"),
             resources.GetString("cmbGender.Properties.Items2")});
             // 
-            // txtPatientId
-            // 
-            resources.ApplyResources(this.txtPatientId, "txtPatientId");
-            this.txtPatientId.Name = "txtPatientId";
-            this.txtPatientId.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtPatientId.Properties.MaskSettings.Set("allowBlankInput", true);
-            this.txtPatientId.Properties.MaskSettings.Set("mask", "\\d{0,4}");
-            // 
             // AddPatientForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtPatientId);
-            this.Controls.Add(this.lblPatientId);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.lblGender);
             this.Controls.Add(this.txtContactNumber);
@@ -230,7 +208,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGender.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPatientId.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
