@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic; // For List
-using System.Configuration; // For ConfigurationManager (to read App.config)
-using System.Net.Http; // For HttpClient, HttpResponseMessage
-using System.Threading.Tasks; // For async/await
-using Newtonsoft.Json;       // For JsonConvert (to deserialize JSON)
+using System.Collections.Generic; 
+using System.Configuration;
+using System.Net.Http; 
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
-namespace Hospital1._0.Classes.News // Adjust this namespace if your folder structure is different
+namespace Hospital1._0.Classes.News
 {
     public class NewsApiClient
     {
@@ -18,26 +18,19 @@ namespace Hospital1._0.Classes.News // Adjust this namespace if your folder stru
             _httpClient = new HttpClient();
             // Read API key from App.config
             _apiKey = ConfigurationManager.AppSettings["NewsApiKey"];
-
-            if (string.IsNullOrEmpty(_apiKey))
-            {
-                // This error will tell you if the API key is missing or empty in App.config
-                throw new InvalidOperationException("News API key (NewsApiKey) not found or is empty in App.config. Please add it.");
-            }
         }
 
         // Method to get top health headlines
-        // Takes language (e.g., "en", "tr") and country (e.g., "us", "tr") as 2-letter ISO codes.
         public async Task<List<Article>> GetHealthHeadlinesAsync(string country, int pageSize = 10)
         {
             try
             {
                 // Construct the API URL for top health headlines
                 string requestUrl = $"{BaseUrl}top-headlines?" +
-                                    $"country={country}&" +   // Filter by country (e.g., US, TR) 
+                                    $"country={country}&" +
                                     $"category=health&" +
-                                    $"pageSize={pageSize}&" + // Number of articles to fetch
-                                    $"apiKey={_apiKey}";      // Your API key
+                                    $"pageSize={pageSize}&" +
+                                    $"apiKey={_apiKey}";
 
 
                 HttpResponseMessage response = await _httpClient.GetAsync(requestUrl);
@@ -52,9 +45,6 @@ namespace Hospital1._0.Classes.News // Adjust this namespace if your folder stru
                 }
                 else
                 {
-                    // If API returns a status other than "ok" (e.g., "error")
-                    // News API error responses typically have 'code' and 'message' properties.
-                    // You could enhance NewsApiResponse to capture these for better error details.
                     throw new Exception($"News API returned an error status: {apiResponse.Status}. Check API documentation for error codes.");
                 }
             }

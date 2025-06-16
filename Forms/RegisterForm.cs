@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Resources; // For ResourceManager
+using System.Resources;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;

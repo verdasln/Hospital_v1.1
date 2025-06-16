@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Globalization; // For CultureInfo
-using System.Resources;    // For ResourceManager
-using System.Threading;   // For Thread
+using System.Globalization;
+using System.Resources;
+using System.Threading;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
@@ -46,7 +46,6 @@ namespace Hospital1._0.Forms
         // and also for the toggle button's text
         private void ApplyLocalizedTextToControls()
         {
-            // Localize form title
             this.Text = resMan.GetString("LoginTitle");
 
             // Localize the toggle button's text based on the *current* language.
@@ -59,8 +58,6 @@ namespace Hospital1._0.Forms
             {
                 btnToggleLanguage.Text = resMan.GetString("ToggleToEnglish"); // If currently TR, button says "English"
             }
-            // You might also need to localize other labels/controls if not handled by Localizable = true
-            // Example: lblUsername.Text = resMan.GetString("UsernameLabelText");
         }
 
         private void InitializePlaceholderText()
@@ -135,11 +132,11 @@ namespace Hospital1._0.Forms
             string newCultureName;
 
 
-            if (currentCultureName == "en-US" || currentCultureName == "en") // Also check for neutral culture "en"
+            if (currentCultureName == "en-US" || currentCultureName == "en")
             {
                 newCultureName = "tr-TR";
             }
-            else // If current is tr-TR or any other (e.g., just "tr")
+            else
             {
                 newCultureName = "en-US";
             }
@@ -148,15 +145,12 @@ namespace Hospital1._0.Forms
 
 
             // Recreate the login form to apply the new language to all controls
-            // This is the simplest way to refresh all UI elements with the new culture.
             LoginForm newLoginForm = new LoginForm();
             this.Hide(); // Hide the current form
             newLoginForm.ShowDialog(); // Show the new, localized form
             this.Close(); // Close the old form (which is 'this')
         }
 
-        // Ensure you only have one Load event handler, if any.
-        // If LoginForm_Load1 was empty, it can be removed.
         private void LoginForm_Load(object sender, EventArgs e)
         {
 

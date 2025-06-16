@@ -15,8 +15,6 @@ namespace Hospital1._0.Forms
         public AddPatientForm()
         {
             InitializeComponent();
-            // Optionally, if you have a label or read-only text box to display the generated ID,
-            // you might initialize it here, e.g., lblPatientIdDisplay.Text = "Will be generated automatically";
         }
 
         // Function to calculate Age automatically.
@@ -40,22 +38,17 @@ namespace Hospital1._0.Forms
                 // 1. Get the next available Patient ID atomically
                 int newPatientId = await PatientIdGenerator.GetNextPatientId();
 
-                // 2. Prepare the PatientData object from form fields (excluding Patient ID input)
-                var patientData = GetWriteData(); // This method now only collects non-ID fields
-                patientData.PatientId = newPatientId; // Assign the newly generated ID
+                var patientData = GetWriteData();
+                patientData.PatientId = newPatientId;
 
-                // 3. Save the patient data to Firestore, using the generated ID as the document ID
                 var db = FirestoreHelper.Database;
-                // Important: Use the generated ID as the Document ID in the "Patients" collection
                 DocumentReference docRef = db.Collection("Patients").Document(patientData.PatientId.ToString());
-                await docRef.SetAsync(patientData); // SetAsync will create or overwrite
+                await docRef.SetAsync(patientData);
 
                 MessageBox.Show(resMan.GetString("PatientSaved") + $"{newPatientId}",
                                  resMan.GetString("SaveSuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearFields();
-                // If you have a display field for the new ID, you could set it here:
-                // lblPatientIdDisplay.Text = newPatientId.ToString();
             }
             catch (ArgumentException aex) // Catch validation errors specifically
             {
@@ -76,11 +69,6 @@ namespace Hospital1._0.Forms
 
         private PatientData GetWriteData()
         {
-            // Removed validation for txtPatientId as it's no longer manually entered.
-            // Ensure you have a PatientData class with PatientId property.
-            // Example:
-            // public class PatientData { public int PatientId {get;set;} ... other props }
-
             #region Validation checks for other fields
             if (string.IsNullOrEmpty(txtName.Text))
             {
@@ -133,15 +121,13 @@ namespace Hospital1._0.Forms
 
         private void ClearFields()
         {
-            // txtPatientId.Text = string.Empty; // Remove this line as txtPatientId is no longer input
             txtName.Text = string.Empty;
-            dtDob.DateTime = DateTime.Now; // Or set a sensible default
+            dtDob.DateTime = DateTime.Now;
             txtAge.Text = string.Empty;
             cmbBloodGroup.SelectedIndex = -1;
             txtContactNumber.Text = string.Empty;
             cmbGender.SelectedIndex = -1;
             txtAddress.Text = string.Empty;
-            // If you have a label/readonly textbox for generated ID, clear it or set to "..."
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

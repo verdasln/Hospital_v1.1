@@ -1,5 +1,5 @@
 ﻿using System.Drawing;
-using System.Resources; // For ResourceManager
+using System.Resources;
 using DevExpress.XtraEditors;
 using Google.Cloud.Firestore;
 using Hospital1._0.Classes;

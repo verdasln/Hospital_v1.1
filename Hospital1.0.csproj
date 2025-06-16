@@ -167,7 +167,6 @@
     <Compile Include="Classes\FirestoreHelper.cs" />
     <Compile Include="Classes\HospitalInfo.cs" />
     <Compile Include="Classes\LoginData.cs" />
-    <Compile Include="Classes\NewsApiResponse.cs" />
     <Compile Include="Classes\News\NewsApiClient.cs" />
     <Compile Include="Classes\News\NewsApiResponse.cs" />
     <Compile Include="Classes\PatientData.cs" />
