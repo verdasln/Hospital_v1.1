@@ -117,11 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtMedicines.Properties.NullValuePrompt" xml:space="preserve">
-    <value>İlaçları Girin</value>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Kaydedin</value>
+  </data>
+  <data name="txtPatientId.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Hasta ID Girin</value>
+  </data>
+  <data name="txtPatientName.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Hasta Adı</value>
+  </data>
+  <data name="txtSymptoms.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Belirtileri Girin</value>
   </data>
   <data name="txtDiagnosis.Properties.NullValuePrompt" xml:space="preserve">
     <value>Tanı Girin</value>
+  </data>
+  <data name="txtMedicines.Properties.NullValuePrompt" xml:space="preserve">
+    <value>İlaçları Girin</value>
+  </data>
+  <data name="chkWardRequired.Properties.Caption" xml:space="preserve">
+    <value>Koğuş Gerekli</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkWardRequired.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 24</value>
+  </data>
+  <data name="cmbTypeOfWard.Properties.Items" xml:space="preserve">
+    <value>Genel</value>
   </data>
   <data name="cmbTypeOfWard.Properties.Items1" xml:space="preserve">
     <value>Yarı-özel</value>
@@ -129,36 +151,10 @@
   <data name="cmbTypeOfWard.Properties.Items2" xml:space="preserve">
     <value>Özel</value>
   </data>
-  <data name="chkWardRequired.Properties.Caption" xml:space="preserve">
-    <value>Koğuş Gerekli</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Tanı Bilgilerini Ekle</value>
-  </data>
-  <data name="cmbTypeOfWard.Properties.Items" xml:space="preserve">
-    <value>Genel</value>
-  </data>
-  <data name="txtPatientName.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Hasta Adı</value>
-  </data>
   <data name="cmbTypeOfWard.Properties.NullValuePrompt" xml:space="preserve">
     <value>Koğuş Türünü Seçin</value>
   </data>
-  <data name="txtPatientId.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Hasta ID Girin</value>
-  </data>
-  <data name="txtSymptoms.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Belirtileri Girin</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chkWardRequired.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 24</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Kaydedin</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tanı Bilgilerini Ekle</value>
   </data>
 </root>

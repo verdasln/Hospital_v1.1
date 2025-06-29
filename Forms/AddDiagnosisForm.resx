@@ -117,18 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtDiagnosis.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;txtMedicines.Name" xml:space="preserve">
+    <value>txtMedicines</value>
   </data>
   <data name="txtMedicines.Properties.NullValuePrompt" xml:space="preserve">
     <value>Enter Medicines</value>
   </data>
   <data name="&gt;&gt;chkWardRequired.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtMedicines.Name" xml:space="preserve">
-    <value>txtMedicines</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -158,8 +154,8 @@
   <data name="&gt;&gt;chkWardRequired.Name" xml:space="preserve">
     <value>chkWardRequired</value>
   </data>
-  <data name="&gt;&gt;txtMedicines.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtPatientName.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -174,6 +170,10 @@
   <data name="cmbTypeOfWard.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 22</value>
   </data>
+  <data name="&gt;&gt;txtMedicines.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtPatientName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -185,9 +185,6 @@
   </data>
   <data name="&gt;&gt;txtPatientName.Name" xml:space="preserve">
     <value>txtPatientName</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;cmbTypeOfWard.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -201,8 +198,8 @@
   <data name="&gt;&gt;cmbTypeOfWard.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="txtMedicines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 80</value>
+  <data name="&gt;&gt;txtMedicines.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="chkWardRequired.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -219,8 +216,9 @@
   <data name="txtPatientId.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 22</value>
   </data>
-  <data name="&gt;&gt;txtMedicines.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <assembly alias="DevExpress.Utils.v24.2" name="DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="cmbTypeOfWard.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.2">
+    <value>Combo</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Add Diagnosis Information</value>
@@ -237,8 +235,8 @@
   <data name="txtPatientName.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 70</value>
   </data>
-  <data name="&gt;&gt;cmbTypeOfWard.Name" xml:space="preserve">
-    <value>cmbTypeOfWard</value>
+  <data name="txtMedicines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 80</value>
   </data>
   <data name="btnSave.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -267,10 +265,6 @@
   <data name="&gt;&gt;txtPatientName.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <assembly alias="DevExpress.Utils.v24.2" name="DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="cmbTypeOfWard.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.2">
-    <value>Combo</value>
-  </data>
   <data name="txtDiagnosis.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 80</value>
   </data>
@@ -283,20 +277,17 @@
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="chkWardRequired.Properties.DisplayValueUnchecked" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 16</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AddDiagnosisForm</value>
+  <data name="&gt;&gt;txtSymptoms.Name" xml:space="preserve">
+    <value>txtSymptoms</value>
   </data>
   <data name="&gt;&gt;txtSymptoms.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="chkWardRequired.Properties.DisplayValueUnchecked" xml:space="preserve">
-    <value />
   </data>
   <data name="cmbTypeOfWard.Properties.NullValuePrompt" xml:space="preserve">
     <value>Select Type of Ward</value>
@@ -313,8 +304,8 @@
   <data name="txtMedicines.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 270</value>
   </data>
-  <data name="&gt;&gt;txtSymptoms.Name" xml:space="preserve">
-    <value>txtSymptoms</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddDiagnosisForm</value>
   </data>
   <data name="txtPatientName.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 22</value>
@@ -328,11 +319,17 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>481, 520</value>
   </data>
+  <data name="&gt;&gt;cmbTypeOfWard.Name" xml:space="preserve">
+    <value>cmbTypeOfWard</value>
+  </data>
   <data name="&gt;&gt;txtPatientId.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="txtSymptoms.Properties.NullValuePrompt" xml:space="preserve">
     <value>Enter Symptoms</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="chkWardRequired.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -357,6 +354,9 @@
   </data>
   <data name="cmbTypeOfWard.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="txtDiagnosis.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
